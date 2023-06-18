@@ -11,6 +11,10 @@ import {extendTheme} from '@chakra-ui/react';
 import Provider from '/components/Provider';
 
 
+// Scroller
+import ScrollToTop from 'components/ScrollToTop';
+
+
 
 
 
@@ -23,6 +27,7 @@ const RootLayout = ({ children }) => (
             <div className='main'>
                 <div className='gradient'>
                 </div>
+                <ScrollToTop/>
                {children}
             </div>
         </Provider>
