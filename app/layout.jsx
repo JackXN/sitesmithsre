@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import '/styles/globals.css';
 
 // Navbar
@@ -13,7 +13,6 @@ import Provider from '/components/Provider';
 
 // Scroller
 import ScrollToTop from 'components/ScrollToTop';
-
 
 
 

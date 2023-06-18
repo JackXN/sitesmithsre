@@ -9,13 +9,28 @@ import styles from '../components/componentStyles/homepage';
 
 const Homepage = () => {
   return (
-    <Container maxW='100vw'  height='200vh'>
+    <Container maxW='100vw'  height='100%'>
       <Box sx={styles.wrapper}>
+        <div className='blob'>
+          <Image src='/BlobOne.png' alt='Blob'/>
+        </div>
+        <div className='blob-bottom-right'>
+          <Image src='/BlobTwo.png' alt='Blob Two :)'/>
+        </div>
 <Box sx={styles.titleContainer}
 >
-  <Text as='h1' color='brand.black'>Crafting <span style={{backgroundColor: '#E04C4C', padding: '15px 10px 0px 10px',color: 'white', borderRadius: '6px'}}>Beautiful</span> <br/> Websites That <br/> & Convert</Text>
+  <Text as='h1' color='brand.black'>Crafting <span style={{backgroundColor: '#E04C4C', padding: '15px 10px 0px 10px',color: 'white', borderRadius: '6px'}}>Beautiful</span> <br/> Websites That <br/> Inspire & Convert</Text>
   <Spacer/>
   <Text as='h2' color='brand.black'>Expert Web Development, Graphic Design & Coding Services</Text>
+
+<Image src='/AnvilLogo.png' alt='Site Smiths Anvil Logo' 
+height={['50%','50%','50%','15%']}
+width={['50%','50%','50%', '25%']}
+mt={['50px']}
+position='relative'
+left={[null,null,null,null,'350px']}
+bottom={[null,null,null,null,'150px']}
+/>
 <Scroller/>
 
 </Box>

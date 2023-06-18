@@ -13,6 +13,7 @@
 */
 
 .main {
+  overflow-x: hidden;
 }
 
 .main:before {
@@ -36,6 +37,35 @@
   opacity: 0.4;
   filter: invert(1);
 }
+
+
+.blob {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: none;
+  right: auto;
+  content: " ";
+  border-radius: 26% 74% 67% 33% / 30% 30% 70% 70%;
+  top: 43px;
+  left: 45px;
+  transform: translate(-50%, -50%);
+}
+
+.blob-bottom-right {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: auto;
+  content: " ";
+  border-radius: 26% 74% 67% 33% / 30% 30% 70% 70%;
+  bottom: 40px;
+  right: 40px;
+  transform: translate(50%, 50%);
+}
+
 
 .gradient {
   height: fit-content;

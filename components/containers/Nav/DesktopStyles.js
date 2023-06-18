@@ -6,8 +6,7 @@ const styles = {
     container: {
       display: ["none", "none", "none", "none", 'flex'],
       fontWeight: "lighter",
-      padding: [null,null,null,null,'25px 60px 25px 60px'],
-      background: 'orange'
+      padding: [null,null,null,null,'0px 60px 25px 60px'],
     },
   
     leftContainer: {
