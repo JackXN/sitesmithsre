@@ -43,6 +43,7 @@ const Navbar = () => {
     };
   }, []);
 
+  
   const ScrollLink = Scroll.Link;
 
   return (

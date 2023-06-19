@@ -26,7 +26,6 @@ const RootLayout = ({ children }) => (
         <Nav/>
                 <ScrollToTop/>
                {children}
-        
         </Provider>
         </body>
     </html>

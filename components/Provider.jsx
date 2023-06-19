@@ -6,8 +6,7 @@ import {SessionProvider} from 'next-auth/react';
 //global css
 import '../styles/globals.css'
 
-// AOS
-import initializeAos from '../aos';
+
 
 // Loader
 
