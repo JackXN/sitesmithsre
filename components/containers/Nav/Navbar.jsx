@@ -43,16 +43,6 @@ const Navbar = () => {
     };
   }, []);
 
-//   useEffect(() => {
-//     if (scrollPos > 0) {
-//       setBgColor("#E04C4C");
-//       setLogoColor("/LogoWhite.png");
-//     } else {
-//       setBgColor(null);
-//       setLogoColor("/Logo.png");
-//     }
-//   }, [scrollPos]);
-
   const ScrollLink = Scroll.Link;
 
   return (

@@ -14,15 +14,14 @@ import Elevate from '../components/containers/Home/Elevate';
 import CookieModal from '../components/CookiesModal';
 
 
-const activeModal = true;
+const activeModal = false;
 
 
 
 const Homepage = () => {
   return (
     <Container maxW='90%'  height='100%'>
-      {activeModal ? <CookieModal/> : none}
- 
+      {activeModal ? <CookieModal/> : null}
       <Box sx={styles.wrapper}>
         {/* CSS BLOBS */}
         <div className='blob'>

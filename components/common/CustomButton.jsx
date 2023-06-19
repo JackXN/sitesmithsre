@@ -11,7 +11,7 @@ const CustomButton = (props) => {
   const [isSecondary, setIsSecondary] = useState(false)
 
 return (
-<button
+<a
   style={{
     borderRadius: '5px',
     fontFamily: 'Paytone One',
@@ -24,12 +24,12 @@ return (
     fontWeight: 'light',
     textTransform: 'uppercase',
     background: props.backgroundColor,
-    
+    cursor: 'pointer',
   }}
   onClick={props.onClick}
 >
   {props.text}
-</button>
+</a>
 )
   
 }
