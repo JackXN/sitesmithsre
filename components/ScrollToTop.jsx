@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
 
   return (
-    <Box display={showScroll ? 'block' : 'none'} position="fixed" bottom="20px" right="20px" zIndex="999">
+    <Box display={showScroll ? 'block' : 'none'} position="fixed" bottom="20px" right="50px" zIndex="999">
       <IconButton
         icon={<FaArrowCircleUp />}
         size="lg"

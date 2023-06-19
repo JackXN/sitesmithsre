@@ -1,16 +1,30 @@
 "use client";
 import React from 'react';
 import {Text, Box, Container,Spacer, Image} from '@chakra-ui/react';
-import ScrollToTop from '../components/ScrollToTop';
-import Scroller from '../components/ScrollIcon';
+
+
+// Styles
 import styles from '../components/componentStyles/homepage';
+
+// Components
+import WhoWeAre from 'components/containers/Home/WhoWeAre';
+import WhatWeDo from 'components/containers/Home/WhatWeDo';
+import Scroller from '../components/ScrollIcon';
+import Elevate from '../components/containers/Home/Elevate';
+import CookieModal from '../components/CookiesModal';
+
+
+const activeModal = true;
 
 
 
 const Homepage = () => {
   return (
-    <Container maxW='100vw'  height='100%'>
+    <Container maxW='90%'  height='100%'>
+      {activeModal ? <CookieModal/> : none}
+ 
       <Box sx={styles.wrapper}>
+        {/* CSS BLOBS */}
         <div className='blob'>
           <Image src='/BlobOne.png' alt='Blob'/>
         </div>
@@ -24,8 +38,8 @@ const Homepage = () => {
   <Text as='h2' color='brand.black'>Expert Web Development, Graphic Design & Coding Services</Text>
 
 <Image src='/AnvilLogo.png' alt='Site Smiths Anvil Logo' 
-height={['50%','50%','50%','15%']}
-width={['50%','50%','50%', '25%']}
+height={['50%','50%','25%','15%']}
+width={['50%','50%','25%', '15%']}
 mt={['50px']}
 position='relative'
 left={[null,null,null,null,'350px']}
@@ -35,7 +49,13 @@ bottom={[null,null,null,null,'150px']}
 
 </Box>
 </Box>
+{/* HERO END */}
 
+
+
+<WhoWeAre/>
+<WhatWeDo/>
+<Elevate/>
 </Container>
   )
 }

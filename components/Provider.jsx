@@ -24,7 +24,7 @@ import {breakpoints, colors} from '../theme/index';
 import '@fontsource/lobster-two';
 import '@fontsource/luckiest-guy';
 import '@fontsource/bangers';
-
+import '@fontsource/kanit';
 
   const theme = extendTheme({
     breakpoints,

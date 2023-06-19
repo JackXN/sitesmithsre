@@ -12,6 +12,7 @@ import Loader from '../components/Loader';
 
 
 
+
 const page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -25,7 +26,7 @@ useEffect(() => {
 
   return (
   <>
-{isLoading ? <Loader/> : <Homepage/>}
+{isLoading ? <Loader/> :  <Homepage/>}
   </>
   )
 }
