@@ -14,7 +14,7 @@ import Elevate from '../components/containers/Home/Elevate';
 import CookieModal from '../components/CookiesModal';
 
 
-const activeModal = false;
+const activeModal = true;
 
 
 
